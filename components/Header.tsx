@@ -11,7 +11,7 @@ const Header = () => {
     <header className="my-10 h-10 flex justify-between gap-5">
       <Link href="/" className="flex items-center gap-1.5">
         <Image src="/icons/logo.svg" alt="logo" width={40} height={32} />
-        <span className="text-2xl font-semibold text-white">BookWise</span>
+        <span className="text-2xl font-semibold text-white max-sm:hidden">BookWise</span>
       </Link>
       <ul className="flex flex-row items-center gap-8">
         <li>

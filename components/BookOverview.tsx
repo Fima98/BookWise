@@ -12,7 +12,7 @@ const BookOverview = ({
   availableCopies,
   description,
   coverColor,
-  coverUrl,
+  coverImage,
 }: Book) => {
   return (
     <section className="book-overview">
@@ -50,14 +50,14 @@ const BookOverview = ({
             variant="wide"
             className="z-10"
             coverColor={coverColor}
-            coverImage={coverUrl}
+            coverImage={coverImage}
           />
           <div className="absolute left-16 top-10 rotate-20 opacity-80 max:sm:hidden">
             <BookCover
               variant="wide"
               className="z-10 blur"
               coverColor={coverColor}
-              coverImage={coverUrl}
+              coverImage={coverImage}
             />
           </div>
         </div>
