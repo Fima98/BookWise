@@ -4,7 +4,6 @@
 @theme {
   /* ---------- Fonts ---------- */
   --font-ibm-plex-sans: "IBM Plex Sans", sans-serif;
-  --bebas-neue: "Bebas Neue", sans-serif;
   --font-bebas-neue: var(--bebas-neue);
 
   /* ---------- Colors ---------- */
@@ -295,7 +294,7 @@
 
 /* Book Overview */
 .book-overview {
-  @apply flex flex-col-reverse items-center gap-12 sm:gap-32 xl:flex-row xl:gap-8;
+  @apply flex flex-col-reverse items-start gap-12 sm:gap-32 xl:flex-row xl:gap-8;
 }
 
 .book-overview h1 {
@@ -466,7 +465,7 @@
 @utility root-container {
   @apply flex min-h-screen flex-1 flex-col
          bg-pattern bg-cover bg-top bg-dark-100
-         px-5 xs:px-10 md:px-16;
+         px-5 xs:px-10 md:px-16 lg:px-24;
 }
 
 @utility book-details {
