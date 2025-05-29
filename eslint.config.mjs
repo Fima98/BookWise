@@ -1,5 +1,6 @@
 import path from "node:path";
 import { fileURLToPath } from "node:url";
+
 import { FlatCompat } from "@eslint/eslintrc";
 import js from "@eslint/js";
 
@@ -31,7 +32,7 @@ export default [
             "index", // Then the index file
             "object", // Object imports
           ],
-          "newlines-between": "never", // No new lines between groups
+          "newlines-between": "always",
           pathGroups: [
             {
               pattern: "@app/**",

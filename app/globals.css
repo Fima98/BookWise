@@ -445,7 +445,7 @@
 }
 
 @utility auth-container {
-  @apply relative flex flex-col-reverse text-light-100 sm:flex-row;
+  @apply relative bg-pattern bg-cover bg-top flex flex-col-reverse text-light-100 sm:flex-row;
 }
 
 @utility auth-form {
