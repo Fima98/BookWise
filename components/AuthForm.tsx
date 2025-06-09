@@ -21,7 +21,7 @@ import {
 import { Input } from "@/components/ui/input";
 import { FIELD_NAMES, FIELD_TYPES } from "@/constants";
 
-import ImageUpload from "./ImageUpload";
+import FileUpload from "./FileUpload";
 
 interface Props<T extends FieldValues> {
   schema: ZodType<T>;
@@ -80,7 +80,15 @@ const AuthForm = <T extends FieldValues>({ type, schema, defaultValues, onSubmit
                   <FormLabel>{FIELD_NAMES[field.name as keyof typeof FIELD_NAMES]}</FormLabel>
                   <FormControl>
                     {field.name === "universityCard" ? (
-                      <ImageUpload />
+                      <FileUpload
+                        type="image"
+                        accept="image/*"
+                        placeholder="Upload a Card"
+                        folder="university-cards"
+                        variant="dark"
+                        value={field.value}
+                        onFileChange={(filePath) => field.onChange(filePath)}
+                      />
                     ) : (
                       <Input
                         required
